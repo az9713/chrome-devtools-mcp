@@ -31,6 +31,12 @@ An AI agent runs a complete e-commerce purchase flow autonomously: login → bro
 | [`demo-shopping/order-confirmation.png`](./demo-shopping/order-confirmation.png) | Screenshot of "Thank you for your order!" |
 | [`demo-shopping/memory-before-checkout.heapsnapshot`](./demo-shopping/memory-before-checkout.heapsnapshot) | 6.7 MB V8 heap dump — open in Chrome DevTools → Memory |
 
+### What else can you build with it? → [`use-cases.md`](./use-cases.md)
+
+50+ agentic workflows across QA, performance, SEO, e-commerce, research, security, and personal productivity — with the specific tools each one uses and why CDP beats alternatives.
+
+---
+
 ### What this tool actually does
 
 `chrome-devtools-mcp` gives your AI assistant (Claude, Gemini, Cursor, Copilot…) the ability to **control and inspect a real Chrome browser**. Instead of just reading and writing text files, your AI can:
