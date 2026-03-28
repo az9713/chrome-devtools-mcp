@@ -551,12 +551,41 @@ Cart badge disappeared. Session complete.
 
 ---
 
+## Screenshots
+
+10 screenshots were captured by re-running the workflow after the demo, one at each key step:
+
+| File | Tool(s) demonstrated | What you see |
+|------|---------------------|--------------|
+| [`screenshots/01-login.png`](screenshots/01-login.png) | `new_page` | Login form — clean slate, no cookie |
+| [`screenshots/02-login-filled.png`](screenshots/02-login-filled.png) | `fill_form` | Both fields populated: `standard_user` / `secret_sauce` |
+| [`screenshots/03-product-catalog.png`](screenshots/03-product-catalog.png) | `click` (Login) | All 6 products, empty cart badge |
+| [`screenshots/04-product-detail.png`](screenshots/04-product-detail.png) | `navigate_page`, `hover` | Fleece Jacket detail page, $49.99 |
+| [`screenshots/05-catalog-cart-full.png`](screenshots/05-catalog-cart-full.png) | `evaluate_script` (bulk add) | Catalog with cart badge showing **6** |
+| [`screenshots/06-mobile-view.png`](screenshots/06-mobile-view.png) | `emulate`, `resize_page` | iPhone 14 Pro layout — single-column, touch-optimised |
+| [`screenshots/07-cart.png`](screenshots/07-cart.png) | `navigate_page` | All 6 items listed, Remove buttons visible |
+| [`screenshots/08-checkout-info.png`](screenshots/08-checkout-info.png) | `fill_form`, `evaluate_script` | Shipping form filled: Jane / Tester / 94107 |
+| [`screenshots/09-checkout-overview.png`](screenshots/09-checkout-overview.png) | `evaluate_script` | Full order summary — all items, $129.94 + $10.40 tax = **$140.34** |
+| [`screenshots/10-order-confirmation.png`](screenshots/10-order-confirmation.png) | `evaluate_script` (Finish) | "Thank you for your order!" — checkout complete |
+
+---
+
 ## Files Produced
 
 ```
 demo-shopping/
 ├── report.md                          ← findings, tool coverage, order summary
 ├── walkthrough.md                     ← this file
-├── order-confirmation.png             ← screenshot of "Thank you for your order!"
-└── memory-before-checkout.heapsnapshot ← 6.7 MB V8 heap dump (pre-checkout state)
+├── memory-before-checkout.heapsnapshot ← 6.7 MB V8 heap dump (pre-checkout state)
+└── screenshots/
+    ├── 01-login.png
+    ├── 02-login-filled.png
+    ├── 03-product-catalog.png
+    ├── 04-product-detail.png
+    ├── 05-catalog-cart-full.png
+    ├── 06-mobile-view.png
+    ├── 07-cart.png
+    ├── 08-checkout-info.png
+    ├── 09-checkout-overview.png
+    └── 10-order-confirmation.png
 ```

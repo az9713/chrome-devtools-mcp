@@ -12,8 +12,21 @@ Findings, tool coverage table, order summary ($140.34), and recommendations.
 ### [`walkthrough.md`](walkthrough.md)
 Full annotated walkthrough: every tool, every input/output, every obstacle and fix.
 
-### [`order-confirmation.png`](order-confirmation.png)
-Screenshot of the "Thank you for your order!" confirmation page.
+### [`screenshots/`](screenshots/)
+10 screenshots covering every step of the workflow:
+
+| File | Step |
+|------|------|
+| [`01-login.png`](screenshots/01-login.png) | Login page — `new_page` opened saucedemo.com |
+| [`02-login-filled.png`](screenshots/02-login-filled.png) | Credentials filled — `fill_form` in action |
+| [`03-product-catalog.png`](screenshots/03-product-catalog.png) | Product catalog — logged in, 6 items visible |
+| [`04-product-detail.png`](screenshots/04-product-detail.png) | Fleece Jacket detail — `navigate_page` deep link |
+| [`05-catalog-cart-full.png`](screenshots/05-catalog-cart-full.png) | All 6 items added — cart badge shows 6 |
+| [`06-mobile-view.png`](screenshots/06-mobile-view.png) | iPhone 14 Pro layout — `emulate` + `resize_page` |
+| [`07-cart.png`](screenshots/07-cart.png) | Cart page — all items, $129.94 subtotal |
+| [`08-checkout-info.png`](screenshots/08-checkout-info.png) | Checkout step 1 — shipping form filled with `fill_form` |
+| [`09-checkout-overview.png`](screenshots/09-checkout-overview.png) | Checkout step 2 — order summary, $140.34 total |
+| [`10-order-confirmation.png`](screenshots/10-order-confirmation.png) | "Thank you for your order!" — purchase complete |
 
 ### [`memory-before-checkout.heapsnapshot`](memory-before-checkout.heapsnapshot)
 6.7 MB V8 heap dump captured mid-session (6 items in cart, mobile emulation active).

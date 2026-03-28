@@ -121,6 +121,23 @@ Combined with the 11 tools from the CNN demo, this brings the total demonstrated
 
 ---
 
+## Screenshots
+
+| # | File | What it shows |
+|---|------|--------------|
+| 1 | [`screenshots/01-login.png`](screenshots/01-login.png) | Login page |
+| 2 | [`screenshots/02-login-filled.png`](screenshots/02-login-filled.png) | Credentials entered with `fill_form` |
+| 3 | [`screenshots/03-product-catalog.png`](screenshots/03-product-catalog.png) | Product catalog after login |
+| 4 | [`screenshots/04-product-detail.png`](screenshots/04-product-detail.png) | Fleece Jacket detail page |
+| 5 | [`screenshots/05-catalog-cart-full.png`](screenshots/05-catalog-cart-full.png) | All 6 items added, cart badge = 6 |
+| 6 | [`screenshots/06-mobile-view.png`](screenshots/06-mobile-view.png) | iPhone 14 Pro emulation via `emulate` + `resize_page` |
+| 7 | [`screenshots/07-cart.png`](screenshots/07-cart.png) | Cart with all 6 items |
+| 8 | [`screenshots/08-checkout-info.png`](screenshots/08-checkout-info.png) | Checkout form filled: Jane / Tester / 94107 |
+| 9 | [`screenshots/09-checkout-overview.png`](screenshots/09-checkout-overview.png) | Order summary — $140.34 total |
+| 10 | [`screenshots/10-order-confirmation.png`](screenshots/10-order-confirmation.png) | "Thank you for your order!" |
+
+---
+
 ## Recommendations
 
 1. **Fix backtrace.io credentials** — configure a real API key in environment variables, or remove the SDK entirely if crash reporting is not needed for this demo app.
