@@ -46,6 +46,14 @@ Open in Chrome DevTools → Memory panel to explore.
 
 ---
 
+## Trigger prompt
+
+Copy this into Claude Code (with chrome-devtools-mcp configured) to run this demo yourself:
+
+> "Using chrome-devtools-mcp, act as an autonomous shopping agent on https://www.saucedemo.com. Log in using fill_form with username standard_user and password secret_sauce. Browse the product catalog and hover over the Sauce Labs Fleece Jacket. Navigate to its detail page. Open the Sauce Labs Backpack detail page in a second background tab for comparison, then close that tab. Add all 6 products to the cart. Switch to iPhone 14 Pro mobile emulation (390×844, 3× DPR, touch enabled) and take a screenshot showing the mobile layout. Take a heap memory snapshot and save it to demo-shopping/memory-before-checkout.heapsnapshot. Navigate to the cart, proceed to checkout, fill the shipping form with first name Jane, last name Tester, zip 94107, and complete the order. Report any broken third-party integrations discovered in the network requests."
+
+---
+
 ## Suggested Reading Order
 
 1. `report.md` — see what happened and what was found

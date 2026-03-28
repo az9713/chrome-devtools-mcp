@@ -24,6 +24,14 @@ A real-world run of the health check project against CNN.com.
 
 ---
 
+## Trigger prompt
+
+Copy this into Claude Code (with chrome-devtools-mcp configured) to run this demo yourself:
+
+> "Using chrome-devtools-mcp, run a full website health check on https://www.cnn.com. Open the page in a new tab, dismiss any consent or cookie dialogs that appear, then: take a screenshot, read the accessibility tree, start a performance trace and reload the page, stop the trace and analyze Core Web Vitals (LCP, CLS, INP), list all network requests filtering for third-party domains and count unique vendor domains, check for console errors, and attempt a Lighthouse audit. Write a health report covering: page structure, performance scores, third-party vendor count, any forced reflow or layout thrashing issues, cache headers, and your top 5 recommendations."
+
+---
+
 ## Suggested Reading Order
 
 1. `quickstart.md` — understand what you'll build and get set up
