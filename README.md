@@ -5,18 +5,31 @@
 
 ---
 
-## ✦ Added in this fork: `demo-health-check/`
+## ✦ Added in this fork: two end-to-end demos
 
 If terms like *MCP server*, *Chrome DevTools Protocol*, *performance trace*, or *Lighthouse* feel unfamiliar — you're not alone, and you're in the right place.
 
-This fork adds a self-contained learning package in the [`demo-health-check/`](./demo-health-check/) folder:
+This fork adds two self-contained demos — together they cover **26 of 29** chrome-devtools-mcp tools.
+
+### Demo 1 — [`demo-health-check/`](./demo-health-check/) — Website health audit (CNN.com)
 
 | File | What it is | Start here if… |
 |------|-----------|----------------|
 | [`demo-health-check/quickstart.md`](./demo-health-check/quickstart.md) | A hands-on project: produce a real Website Health Report using 7 of the 29 tools, with 6 copy-paste prompts | You want to learn by doing |
 | [`demo-health-check/cnn-case-study/report.md`](./demo-health-check/cnn-case-study/report.md) | A complete health report for CNN.com — Core Web Vitals, 52 third-party vendors, 3,906ms of layout thrashing, cache issues, console errors | You want to see what output looks like |
-| [`demo-health-check/cnn-case-study/walkthrough.md`](./demo-health-check/cnn-case-study/walkthrough.md) | A step-by-step annotated walkthrough: every tool used, every input/output, every obstacle — the full story behind the report | You want to understand *how* it works |
+| [`demo-health-check/cnn-case-study/walkthrough.md`](./demo-health-check/cnn-case-study/walkthrough.md) | Step-by-step annotated walkthrough: every tool used, every input/output, every obstacle — the full story behind the report | You want to understand *how* it works |
 | [`demo-health-check/reference.md`](./demo-health-check/reference.md) | Complete reference for all 29 tools, architecture, connection modes, daemon/CLI, and configuration | You want the full picture |
+
+### Demo 2 — [`demo-shopping/`](./demo-shopping/) — Agentic shopping workflow (saucedemo.com)
+
+An AI agent runs a complete e-commerce purchase flow autonomously: login → browse → multi-tab comparison → cart → mobile emulation → checkout → order confirmation. Covers the 18 interaction tools not used in Demo 1.
+
+| File | What it is |
+|------|-----------|
+| [`demo-shopping/report.md`](./demo-shopping/report.md) | Findings: broken telemetry, React event quirk, heap memory baseline, $140.34 order |
+| [`demo-shopping/walkthrough.md`](./demo-shopping/walkthrough.md) | Full annotated walkthrough of all 18 tools with inputs, outputs, and obstacles |
+| [`demo-shopping/order-confirmation.png`](./demo-shopping/order-confirmation.png) | Screenshot of "Thank you for your order!" |
+| [`demo-shopping/memory-before-checkout.heapsnapshot`](./demo-shopping/memory-before-checkout.heapsnapshot) | 6.7 MB V8 heap dump — open in Chrome DevTools → Memory |
 
 ### What this tool actually does
 
