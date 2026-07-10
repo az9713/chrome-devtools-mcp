@@ -34,6 +34,7 @@ updates:
           - 'yargs'
           - 'debug'
           - 'core-js'
+    open-pull-requests-limit: 0
   - package-ecosystem: github-actions
     directory: /
     schedule:
@@ -45,3 +46,4 @@ updates:
       all:
         patterns:
           - '*'
+    open-pull-requests-limit: 0
